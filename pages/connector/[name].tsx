@@ -106,7 +106,7 @@ const emptyData = [
     title: "",
     subtitle: "",
     author: "",
-    verified: false,
+    verified: true,
     enabled: false,
     description: "",
     website: "",
@@ -138,11 +138,14 @@ const Connector = () => {
       // Code using query
       console.log(router.query);
       // this will set the state before component is mounted
-      setFilteredData(
-        Data.connectors.filter((connector) =>
-          connector.name.includes(router.query.name as string)
-        )
-      );
+      // setFilteredData(
+      //   Data.connectors.filter((connector : any) =>
+      //     connector.name.includes(router.query.name as string)
+      //   )
+      // );
+      //  Temp bandaid for deployment (REMOVE AFTER)
+      setFilteredData(Data.connectors as any);
+
       {
         /* TODO: Add metadata endpoint checks here */
       }
