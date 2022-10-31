@@ -27,7 +27,7 @@ const Home: NextPage = () => {
   var connectorsData = Data.connectors;
   const [gridView, setGridView] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [searchQuery, setSearchQuery] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const filteredPeople =
     searchQuery === "" || searchQuery === null
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
                     displayValue={(connector: { name: string }) =>
                       connector === null ? "" : connector.name
                     }
-                    onChange={(event) => setSearchQuery(event.target.value)}
+                    onChange={(event) => setSearchQuery(event.target.value as string)}
                     placeholder="Search for a connector"
                   />
                 </div>
@@ -67,7 +67,7 @@ const Home: NextPage = () => {
                   leave="transition ease-in duration-100"
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
-                  afterLeave={() => setSearchQuery(null)}
+                  afterLeave={() => setSearchQuery("")}
                 >
                   <Combobox.Options className="absolute mt-2 max-h-72 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg focus:outline-none sm:text-sm">
                     {filteredPeople.length === 0 ? (
