@@ -1,0 +1,389 @@
+{
+  "title": "nakji connector explorer",
+  "connectors": [
+    {
+      "name": "bnbchain",
+      "title": "BNB Chain",
+      "subtitle": "nakji/bnbchain",
+      "author": "nakji_team",
+      "verified": true,
+      "enabled": true,
+      "description": "Binance Smart Chain Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://www.bnbchain.org/",
+      "icon": "https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Binance"],
+      "datastreams": [
+        {
+          "name": "nakji.BnbChain.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.BnbChain.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.BnbChain.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethereum",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "verified": true,
+      "enabled": true,
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ether1eum",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethere2um",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethereum3",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethereum4",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethereum5",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethereum6",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ethere7um",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    },
+    {
+      "name": "ether8eum",
+      "title": "Ethereum",
+      "subtitle": "nakji/ethereum",
+      "author": "nakji_team",
+      "description": "Ethereum Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["Layer 1", "EVM", "Ethereum"],
+      "datastreams": [
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint1",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        },
+        {
+          "name": "nakji.Ethereum.0_0_0.endpoint2",
+          "schema": "Insert Text here",
+          "example_response": "Example Response"
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Example changelog text"
+        },
+        {
+          "number": "0.0.1",
+          "changelog": "Example changelog text"
+        }
+      ]
+    }
+  ]
+}
