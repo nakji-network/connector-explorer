@@ -14,6 +14,9 @@ function ListView({ data = Data["connectors"] }) {
             icon: string;
             title: string;
             subtitle: string;
+            author: string;
+            version: string;
+            description: string;
             website: string;
             tags: string[];
           }) => (
