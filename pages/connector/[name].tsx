@@ -62,35 +62,35 @@ function PlaygroundPanel({ datastreams }: { datastreams: any }) {
     <div>
       <ul
         role="list"
-        className="grid gap-4 grid-cols-2 pt-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5"
+        className="grid gap-4 grid-cols-3 pt-1 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-11"
       >
-        <li className="h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-1 flex flex-col rounded-lg bg-white text-center shadow-md">
-          <h3 className="text-left text-gray-600 text-lg font-bold">
+        <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-3 flex flex-col rounded-lg bg-white text-center shadow-md">
+          <h3 className="text-left  text-gray-600 text-lg font-bold">
             Datastreams
           </h3>
           {/* Lists */}
-          <div> 
+          <div className="text-left overflow-x-auto	overflow-y-clip	"> 
           {datastreams.map((datastream: any) => (
-              <div>{datastream.name}</div>))}
+              <li className=" list-disc list-inside text-left overflow-x-auto	overflow-y-clip	py-0.5 font-mono text-sm">{datastream.name}</li>))}
           </div>
         </li>
-        <li className="h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-2 flex flex-col divide-y divide-gray-500 rounded-xl bg-white text-center shadow-lg">
+        <li className="mih-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg">
           <h3 className="text-left text-gray-600 text-lg font-bold">
             Response Schema
           </h3>
           <div>
-            <pre className="text-left text-black-100 text-sm sm:text-base">
+            <pre className="text-left text-black-100 text-xs sm:text-sm overflow-x-auto	overflow-y-clip px-3 py-2">
               {datastreams.map((datastream: any) => (
                                 datastream.name + ":\n" +
               JSON.stringify(datastream.schema, null, 2) + "\n\n"))}
             </pre>
           </div>
         </li>
-        <li className="h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-2 flex flex-col divide-y divide-gray-500 rounded-xl bg-white text-center shadow-lg">
+        <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg overflow-x-auto	overflow-y-clip">
           <h3 className="text-left text-gray-600 text-lg font-bold">
             Example Response
           </h3>
-          <pre className="text-left text-black-100 text-sm sm:text-base">
+          <pre className="text-left text-black-100 text-xs sm:text-sm overflow-x-auto	overflow-y px-3 py-2">
               {datastreams.map((datastream: any) => (
                 datastream.name + ":\n" +
               JSON.stringify(datastream.example_response, null, 2) + "\n\n"))}
