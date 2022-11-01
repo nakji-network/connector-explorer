@@ -68,17 +68,33 @@ function PlaygroundPanel({ datastreams }: { datastreams: any }) {
           <h3 className="text-left text-gray-600 text-lg font-bold">
             Datastreams
           </h3>
-          <div></div>
+          {/* Lists */}
+          <div> 
+          {datastreams.map((datastream: any) => (
+              <div>{datastream.name}</div>))}
+          </div>
         </li>
         <li className="h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-2 flex flex-col divide-y divide-gray-500 rounded-xl bg-white text-center shadow-lg">
           <h3 className="text-left text-gray-600 text-lg font-bold">
             Response Schema
           </h3>
+          <div>
+            <pre className="text-left text-black-100 text-sm sm:text-base">
+              {datastreams.map((datastream: any) => (
+                                datastream.name + ":\n" +
+              JSON.stringify(datastream.schema, null, 2) + "\n\n"))}
+            </pre>
+          </div>
         </li>
         <li className="h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-2 flex flex-col divide-y divide-gray-500 rounded-xl bg-white text-center shadow-lg">
           <h3 className="text-left text-gray-600 text-lg font-bold">
             Example Response
           </h3>
+          <pre className="text-left text-black-100 text-sm sm:text-base">
+              {datastreams.map((datastream: any) => (
+                datastream.name + ":\n" +
+              JSON.stringify(datastream.example_response, null, 2) + "\n\n"))}
+            </pre>
         </li>
       </ul>
     </div>
@@ -106,7 +122,7 @@ const emptyData = [
     title: "",
     subtitle: "",
     author: "",
-    verified: true,
+    verified: false,
     enabled: false,
     description: "",
     website: "",
@@ -128,8 +144,46 @@ const emptyData = [
     ],
   },
 ];
-
-const Connector = () => {
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { name: "makerdao" } },
+      { params: { name: "bybit" } },
+      { params: { name: "traderjoe" } },
+      { params: { name: "axie" } },
+      { params: { name: "pancakeswapv2" } },
+      { params: { name: "aave" } },
+      { params: { name: "mdex" } },
+      { params: { name: "quickswap" } },
+      { params: { name: "ethnft" } },
+      { params: { name: "compound" } },
+      { params: { name: "eth2staking" } },
+      { params: { name: "candymachine" } },
+      { params: { name: "woofi" } },
+      { params: { name: "opensea" } },
+      { params: { name: "evm" } },
+      { params: { name: "flow" } },
+      { params: { name: "uniswapv3" } },
+      { params: { name: "sushiswap" } },
+      { params: { name: "pancakeswapv1" } },
+      { params: { name: "uniswapv2" } },
+      { params: { name: "bitcoin" } },
+      { params: { name: "huobi" } },
+      { params: { name: "honeyswap" } },
+      { params: { name: "bitmex" } },
+      { params: { name: "ftx" } },
+      { params: { name: "bitfinex" } },
+    ],
+    fallback: false, // can also be true or 'blocking'
+  };
+}
+export async function getStaticProps(context: any) {
+  return {
+    // Passed to the page component as props
+    props: { name: {} },
+  };
+}
+const Connector = ({ name }: { name: string }) => {
   const [filteredData, setFilteredData] = useState(emptyData);
   const router = useRouter();
   // var filteredData = Data.connectors;
@@ -138,14 +192,11 @@ const Connector = () => {
       // Code using query
       console.log(router.query);
       // this will set the state before component is mounted
-      // setFilteredData(
-      //   Data.connectors.filter((connector : any) =>
-      //     connector.name.includes(router.query.name as string)
-      //   )
-      // );
-      //  Temp bandaid for deployment (REMOVE AFTER)
-      setFilteredData(Data.connectors as any);
-
+      setFilteredData(
+        (Data.connectors as any).filter((connector: any) =>
+          connector.name.includes(router.query.name as string)
+        )
+      );
       {
         /* TODO: Add metadata endpoint checks here */
       }
@@ -249,5 +300,5 @@ const Connector = () => {
     </div>
   );
 };
-// border-b-4 sm:border-b-4 border-orange-primary
+
 export default Connector;

@@ -1,4 +1,5 @@
 import Data from "../contents/content.json";
+'use client';
 
 function Search({data = Data["connectors"]}) {
     return (

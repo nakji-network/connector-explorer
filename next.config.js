@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
-const withYaml = require('next-plugin-yaml');
+// const withYaml = require('next-plugin-yaml');
 
-module.exports = withYaml({
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ['cryptologos.cc'],
   },
-});
+
+}
 

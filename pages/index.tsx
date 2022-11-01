@@ -14,10 +14,14 @@ import { Combobox } from "@headlessui/react";
 import { Switch } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
-// TODO: Add a search bar
-// TODO: Add a list view
-// TODO: Add a filter bar
-// TODO: Add data processing
+
+// Roadmap: 
+// TODO: Add a filter bar (next release) 
+// https://stackoverflow.com/questions/59144468/how-to-filter-arrays-in-a-json-by-multiple-tags
+// TODO: Add dynamic data (statuses, traffic, etc) (next release)
+// TODO: Add static page generation for all known connectors instead of using hash router
+// https://stackoverflow.com/questions/63673235/nextjs-static-export-with-dynamic-routes
+// TODO: Refactor code into their own components
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -33,23 +37,16 @@ const Home: NextPage = () => {
     searchQuery === "" || searchQuery === null
       ? []
       : connectorsData.filter(
-          (connector: {
-            name: string;
-            icon: string;
-            title: string;
-            subtitle: string;
-            website: string;
-            tags: string[];
-          }) => connector.name.toLowerCase().includes(searchQuery.toLowerCase())
+          (connector: any) => connector.name.toLowerCase().includes(searchQuery.toLowerCase())
         );
 
   return (
     <div className="min-h-full">
-      <Header></Header>
+      <Header/>
       <main>
         <div className="flex w-full items-center justify-between px-6 sm:px-6 lg:px-8 py-6 focus:outline-none">
           {/* Search Box */}
-          <div className="flex items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 border-transparent focus:border-transparent focus:outline-none">
+          <div className="flex items-center w-full sm:w-3/4 md:w-3/5 lg:w-1/2 border-transparent focus:border-transparent focus:outline-none z-10">
             <Combobox value={selected} onChange={setSelected} nullable>
               <div className="relative w-full mt-1">
                 <div className="relative h-11 w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none ">
@@ -180,7 +177,7 @@ const Home: NextPage = () => {
             </Switch>
           </div>
         </div>
-        <div className="mx-auto max-w-8xl px-3 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-8xl px-3 sm:px-6 lg:px-8 z-0">
           {gridView ? (
             <GridView data={Data.connectors} />
           ) : (

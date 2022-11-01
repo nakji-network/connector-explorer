@@ -1,26 +1,23 @@
 import Data from "../contents/content.json";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+'use client';
 
 function GridView({ data = Data["connectors"] }) {
+  const router = useRouter();
   return (
     <div>
       <ul
         role="list"
-        className="grid grid-cols-1 gap-8  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        className="grid grid-cols-1 gap-8 py-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         {data.map(
-          (connector: {
-            name: string;
-            icon: string;
-            title: string;
-            subtitle: string;
-            website: string;
-            tags: string[];
-          }) => (
+          (connector: any) => (
             <Link href={`/connector/${connector.name}`}>
               <li
                 key={connector.name}
                 className="col-span-1 flex flex-col rounded-3xl bg-white text-center shadow-lg"
+                // onClick={() => router.push('/connector/' + connector.name)}
               >
                 <div className="flex flex-1 flex-col p-8">
                   {/* Icon */}
