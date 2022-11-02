@@ -227,11 +227,7 @@ const Connector = ({ name }: { name: string }) => {
         )
       );
       setLoading(true);
-      fetch("https://api.nakji.network/v1/metadata/streams", {
-        headers: {
-          Authorization: `Bearer ${process.env.API_KEY}`,
-        },
-      })
+      fetch("https://api.nakji.network/v1/metadata/streams")
         .then((res) => res.json())
         .then((data) => {
           setData(data);
