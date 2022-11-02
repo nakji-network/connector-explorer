@@ -7,6 +7,8 @@ module.exports = {
   images: {
     domains: ['cryptologos.cc'],
   },
-
+  env: {
+    API_KEY: 'mZSDM3NoM7LY6XHSpSeEurLBIWiPletO',
+  },
 }
 
