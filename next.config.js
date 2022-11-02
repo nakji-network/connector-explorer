@@ -8,7 +8,7 @@ module.exports = {
     domains: ['cryptologos.cc'],
   },
   env: {
-    API_KEY: 'mZSDM3NoM7LY6XHSpSeEurLBIWiPletO',
+    API_KEY: 'tanSJGXqY3XAPZhVJ76gk8KaFVDnmi8u',
   },
 }
 
