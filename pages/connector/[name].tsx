@@ -210,7 +210,7 @@ const Connector = ({ name }: { name: string }) => {
     <div>
       <Header></Header>
 
-      <div className="bg-white px-4 pt-4 pb-20 sm:px-6 sm:pt-6">
+      <div className="bg-white max-w-8xl min-w-7/10 mx-auto px-4 pt-4 pb-20 sm:px-6 sm:pt-6">
         {/* Title Setion */}
         <div className="relative mx-auto">
           {/* Top */}

@@ -59,6 +59,16 @@ module.exports = {
       boxShadow: {
         'md': '0px 0px 2px 2px rgba(0, 0, 0, 0.10)',
         'lg': '0px 0px 4px 2px rgba(0, 0, 0, 0.15)',
+      },
+      width: {
+        '7/10': '70%',
+      },
+      maxWidth: {
+        '7/10': '70%',
+        '8xl': '86rem',
+      },
+      minWidth: {
+        '7/10': '70%',
       }
     },
   },
