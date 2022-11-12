@@ -5,7 +5,7 @@ import Image from "next/image";
 function Header() {
     return (
       <header className="bg-gradient-to-r from-orange-primary to-orange-secondary drop-shadow-md	">
-        <div className="flex mx-auto max-w-8xl py-4 px-4 sm:px-6 lg:px-8">
+        <div className="flex mx-auto w-11/12 sm:w-5/6 md:7/10 max-w-8xl py-4">
           <svg className="h-8 w-auto" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="black"

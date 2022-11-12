@@ -41,10 +41,10 @@ const Home: NextPage = () => {
         );
 
   return (
-    <div className="min-h-full">
+    <div className="min-h-full ">
       <Header/>
-      <main>
-        <div className="flex mx-auto max-w-8xl min-w-7/10 items-center justify-between px-6 sm:px-6 lg:px-8 py-6 focus:outline-none">
+      <main className="mx-auto w-11/12 sm:w-5/6 md:7/10 max-w-8xl ">
+        <div className="flex  items-center justify-between  py-6 focus:outline-none">
           {/* Search Box */}
           <div className="flex items-center max-w-8xl min-w-7/10 sm:w-3/4 md:w-3/5 lg:w-1/2 border-transparent focus:border-transparent focus:outline-none z-10">
             <Combobox value={selected} onChange={setSelected} nullable>
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
             </Combobox>
           </div>
           {/* View Toggle: List <=> Grid */}
-          <div className="ml-10 space-x-4">
+          <div className="ml-10">
             <Switch
               checked={gridView}
               onChange={setGridView}
@@ -177,7 +177,7 @@ const Home: NextPage = () => {
             </Switch>
           </div>
         </div>
-        <div className="mx-auto max-w-8xl px-12 sm:px-8 lg:px-6 z-0">
+        <div className="mx-auto z-0">
           {gridView ? (
             <GridView data={Data.connectors} />
           ) : (
