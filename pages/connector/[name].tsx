@@ -56,45 +56,64 @@ function AboutPanel({
   );
 }
 
+function classNames(...classes: any[]) {
+  return classes.filter(Boolean).join(" ");
+}
+
 // TODO: Add states hooks for selecting items
-function PlaygroundPanel({ datastreams }: { datastreams: any }) {
+function PlaygroundPanel({
+  datastreams,
+  filteredDatastream,
+  setFilteredDatastream,
+}: {
+  datastreams: any;
+  filteredDatastream: any;
+  setFilteredDatastream: any;
+}) {
   return (
     <div>
       <ul
         role="list"
         className="grid gap-4 grid-cols-3 pt-1 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-11"
       >
-        <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-3 flex flex-col rounded-lg bg-white text-center shadow-md">
-          <h3 className="text-left  text-gray-600 text-lg font-bold">
+        <li className="min-h-52 min-h-0 hover:min-h-full py-2 col-span-3 flex flex-col rounded-lg bg-white text-center shadow-md">
+          <h3 className="text-left px-3  text-gray-500 text-lg font-bold">
             Datastreams
           </h3>
+
           {/* Lists */}
-          <div className="text-left overflow-x-auto	overflow-y-clip	"> 
-          {datastreams.map((datastream: any) => (
-              <li className=" list-disc list-inside text-left overflow-x-auto	overflow-y-clip	py-0.5 font-mono text-sm">{datastream.name}</li>))}
-          </div>
+          <ul className="text-left overflow-x-auto">
+            {datastreams.map((datastream: any) => (
+              <li
+                className={classNames(
+                  "text-left px-3 py-2 font-mono text-xs sm:text-sm",
+                  datastream.name == filteredDatastream.name
+                    ? "bg-orange-primary text-white"
+                    : "bg-white text-gray-900"
+                )}
+                onClick={() => setFilteredDatastream(datastream)}
+              >
+                {datastream.name.split(".")[3]}
+              </li>
+            ))}
+          </ul>
         </li>
         <li className="mih-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg">
-          <h3 className="text-left text-gray-600 text-lg font-bold">
+          <h3 className="text-left  text-gray-500 text-lg font-bold">
             Response Schema
           </h3>
-          <div>
-            <pre className="text-left text-black-100 text-xs sm:text-sm overflow-x-auto	overflow-y-clip px-3 py-2">
-              {datastreams.map((datastream: any) => (
-                                datastream.name + ":\n" +
-              JSON.stringify(datastream.schema, null, 2) + "\n\n"))}
-            </pre>
-          </div>
+          <pre className="text-left text-black-100 text-xs sm:text-sm overflow-x-auto	overflow-y-clip px-3 py-2">
+          
+            {filteredDatastream.name + ":\n" + JSON.stringify(filteredDatastream.schema, null, 2)}
+          </pre>
         </li>
         <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg overflow-x-auto	overflow-y-clip">
-          <h3 className="text-left text-gray-600 text-lg font-bold">
+          <h3 className="text-left  text-gray-500 text-lg font-bold">
             Example Response
           </h3>
           <pre className="text-left text-black-100 text-xs sm:text-sm overflow-x-auto	overflow-y px-3 py-2">
-              {datastreams.map((datastream: any) => (
-                datastream.name + ":\n" +
-              JSON.stringify(datastream.example_response, null, 2) + "\n\n"))}
-            </pre>
+            {filteredDatastream.name + ":\n" + JSON.stringify(filteredDatastream.example_response, null, 2)}
+          </pre>
         </li>
       </ul>
     </div>
@@ -144,6 +163,21 @@ const emptyData = [
     ],
   },
 ];
+
+const emptyDatastreams = [
+  {
+    name: "",
+    schema: "",
+    example_response: "",
+  },
+];
+
+const emptyDatastream = {
+  name: "",
+  schema: "",
+  example_response: "",
+};
+
 export async function getStaticPaths() {
   return {
     paths: [
@@ -177,14 +211,17 @@ export async function getStaticPaths() {
     fallback: false, // can also be true or 'blocking'
   };
 }
+
 export async function getStaticProps(context: any) {
   return {
     // Passed to the page component as props
     props: { name: {} },
   };
 }
+
 const Connector = ({ name }: { name: string }) => {
   const [filteredData, setFilteredData] = useState(emptyData);
+  const [filteredDatastream, setFilteredDatastream] = useState(emptyDatastream);
   const router = useRouter();
   // var filteredData = Data.connectors;
   useEffect(() => {
@@ -197,6 +234,7 @@ const Connector = ({ name }: { name: string }) => {
           connector.name.includes(router.query.name as string)
         )
       );
+      setFilteredDatastream(filteredData[0].datastreams[0]);
       {
         /* TODO: Add metadata endpoint checks here */
       }
@@ -270,7 +308,14 @@ const Connector = ({ name }: { name: string }) => {
             {/* Tabs Labelings */}
             <Tab.List className="flex space-x-1 sm:space-x-1.5 bg-white ">
               <ConnectorTabList tabName="About" />
-              <ConnectorTabList tabName="Playground" />
+              <Tab
+                className="w-full border-2	border-gray-400 border-b-white rounded-t-xl text-md sm:text-lg font-bold text-white  ui-selected:bg-orange-primary ui-selected:border-orange-primary ui-selected:border-b-orange-primary ui-not-selected:text-black-100 ui-not-selected:hover:bg-orange-primary/[0.12] ui-not-selected:hover:text-black-100"
+                onClick={() =>
+                  setFilteredDatastream(filteredData[0].datastreams[0])
+                }
+              >
+                Playground
+              </Tab>
               <ConnectorTabList tabName="Version" />
             </Tab.List>
             {/* This is the line under the tabs */}
@@ -286,6 +331,8 @@ const Connector = ({ name }: { name: string }) => {
               <Tab.Panel>
                 <PlaygroundPanel
                   datastreams={filteredData[0].datastreams}
+                  filteredDatastream={filteredDatastream}
+                  setFilteredDatastream={setFilteredDatastream}
                 ></PlaygroundPanel>
               </Tab.Panel>
               <Tab.Panel>

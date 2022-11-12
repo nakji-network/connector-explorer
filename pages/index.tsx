@@ -41,12 +41,12 @@ const Home: NextPage = () => {
         );
 
   return (
-    <div className="min-h-full ">
+    <div className="min-h-full overflow-x-hidden	 ">
       <Header/>
       <main className="mx-auto w-11/12 sm:w-5/6 md:7/10 max-w-8xl ">
         <div className="flex  items-center justify-between  py-6 focus:outline-none">
           {/* Search Box */}
-          <div className="flex items-center max-w-8xl min-w-7/10 sm:w-3/4 md:w-3/5 lg:w-1/2 border-transparent focus:border-transparent focus:outline-none z-10">
+          <div className="flex items-center max-w-8xl sm:w-3/4 md:w-3/5 lg:w-1/2 border-transparent focus:border-transparent focus:outline-none z-10">
             <Combobox value={selected} onChange={setSelected} nullable>
               <div className="relative w-full mt-1">
                 <div className="relative h-11 w-full cursor-default overflow-hidden rounded-lg bg-white text-left shadow-md focus:outline-none ">
