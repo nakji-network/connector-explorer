@@ -486,6 +486,154 @@
       ]
     },
     {
+      "name": "evm",
+      "title": "Arbitrum",
+      "author": "nakji_team",
+      "verified": true,
+      "active": false,
+      "description": "Arbitrum is a layer 2 solution of Ethereum, built to help streamline the automation of smart contracts on its own platform while relying on the Ethereum blockchain’s robust security. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://arbitrum.io/",
+      "icon": "https://seeklogo.com/images/A/arbitrum-logo-DE8649D718-seeklogo.com.png",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 2"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Avalanche",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Avalanche is a layer one blockchain that functions as a platform for decentralized applications and custom blockchain networks. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://www.avax.network/",
+      "icon": "https://cryptologos.cc/logos/avalanche-avax-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "axie",
       "title": "Axie Infinity",
       "author": "nakji_team",
@@ -1027,6 +1175,80 @@
       ]
     },
     {
+      "name": "evm",
+      "title": "BNB Chain",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Build N Build (BNB) Chain is a distributed blockchain network upon which developers and innovators can build decentralized applications (DApps) as part of the move to Web3. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://www.bnbchain.org/en",
+      "icon": "https://cryptologos.cc/logos/bnb-bnb-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "bybit",
       "title": "Bybit",
       "author": "nakji_team",
@@ -1506,6 +1728,80 @@
       ]
     },
     {
+      "name": "evm",
+      "title": "Ethereum",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Ethereum is the community-run technology powering the cryptocurrency ether (ETH) and thousands of decentralized applications. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://ethereum.org/en/",
+      "icon": "https://cryptologos.cc/logos/ethereum-eth-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "ethnft",
       "title": "Ethereum NFT",
       "author": "nakji_team",
@@ -1616,6 +1912,80 @@
             "amount": 32000000000,
             "signature": "kMIIKgBbNQ4Wk8MXY7R09xSNoTpl6UjmM92s6/WrSVrNxKp2QbaSWBEpuw1lJlYLA7H+d65cCruFwi1azXnXpJD/mbKn9Jm5HEndiKvizQyb2E1WcXnh2Q77V6531m/Z",
             "index": "FwkHAAAAAAA="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Fantom",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Fantom is a highly scalable blockchain platform for DeFi, crypto dApps, and enterprise applications. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://fantom.foundation/",
+      "icon": "https://cryptologos.cc/logos/fantom-ftm-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
           }
         }
       ],
@@ -1982,6 +2352,154 @@
               "seconds": 1666759381,
               "nanos": 187493000
             }
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Harmony",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Harmony is a layer-1 blockchain using sharding and Effective Proof of Stake to achieve scalability, security, and decentralization. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://www.harmony.one/",
+      "icon": "https://cryptologos.cc/logos/harmony-one-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "HECO",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "HECO is a decentralized, high-efficiency and energy-saving public chain, designed to facilitate the creation and use of decentralized applications (DApps). Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://www.hecochain.com/en-us/",
+      "icon": "https://seeklogo.com/images/H/heco-logo-B2DCC2EA11-seeklogo.com.png",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
           }
         }
       ],
@@ -3513,6 +4031,228 @@
       ]
     },
     {
+      "name": "evm",
+      "title": "Metis",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Metis seeks to improve the scalability of Ethereum with its Layer-2 network, which bundles Ethereum transactions and processes them off-chain before returning them to Ethereum for recording. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://metis.io/",
+      "icon": "https://s2.coinmarketcap.com/static/img/coins/200x200/9640.png",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 2"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Moonbeam",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Moonbeam is an Ethereum-compatible smart contract platform that makes it easy to build applications on Polkadot. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://moonbeam.network/",
+      "icon": "https://moonbeam.network/wp-content/uploads/2020/03/cropped-Moonbeam-Favicon-550px.png",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Moonriver",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://moonbeam.network/networks/moonriver/",
+      "icon": "https://pbs.twimg.com/profile_images/1402056766880464900/HNcouH0x_400x400.jpg",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "opensea",
       "title": "OpenSea",
       "author": "nakji_team",
@@ -3660,6 +4400,80 @@
             "taker": "uilXmG7sHd33RUTBrH4DGL3Cyiw=",
             "price": "apTXT0MAAA==",
             "metadata": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Optimism",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Optimism is a fast, stable, and scalable L2 blockchain built by Ethereum developers, for Ethereum developers. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://www.optimism.io/",
+      "icon": "https://cryptologos.cc/logos/optimism-ethereum-op-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 2"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
           }
         }
       ],
@@ -3983,6 +4797,80 @@
               "seconds": 1666758696
             },
             "txHash": "UQwfnGhw62Spk68xVIXUK6YKxhRpHVbWcmoCmeF6IQQ="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "Polygon",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Polygon is a L2 scaling solution that runs alongside the Ethereum blockchain, allowing for speedy transactions and low fees. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://polygon.technology/",
+      "icon": "https://cryptologos.cc/logos/polygon-matic-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 2"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
           }
         }
       ],
@@ -6000,6 +6888,80 @@
               "seconds": 1640594966
             },
             "txHash": "mSDcmrh8P+LMJRYZkzs0rHqCyjarBcevoIgcfjPMUqI="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "evm",
+      "title": "xDai/Gnosis",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "xDai/Gnosis Chain is an EVM compatible blockchain built for scalability, community, decentralization and sustainable growth. Disclaimer: the data is currently being streamed via nakji.evm stream.",
+      "website": "https://polygon.technology/",
+      "icon": "https://cryptologos.cc/logos/gnosis-gno-gno-logo.png?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.evm.0_0_0.chain_block",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "Hash": "string",
+            "Number": "int",
+            "GasLimit": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666759458
+            },
+            "Hash": "0x5e7c0998c4106ea62bc0cc007ac091ca115b4da34f369c62900134487d9c11c3",
+            "Number": "33116754",
+            "GasLimit": "80000000"
+          }
+        },
+        {
+          "name": "nakji.evm.0_0_0.chain_tx",
+          "schema": {
+            "ts": {
+              "seconds": "int"
+            },
+            "From": "string",
+            "Hash": "string",
+            "Size": "double",
+            "AccountNonce": "int",
+            "Price": "int",
+            "GasLimit": "int",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "int",
+            "R": "int",
+            "S": "int"
+          },
+          "example_response": {
+            "ts": {
+              "seconds": 1666763766
+            },
+            "From": "+ilEjRLaJKPPLOcmbXIzWk9BGqU=",
+            "Hash": "0x2dfafb81ce59370741e346a2a78b5de65b5c1fc8ff9f150978b2a76d01248809",
+            "Size": 175,
+            "AccountNonce": "520686",
+            "Price": "2521825319",
+            "GasLimit": "36864",
+            "Recipient": "l7UnXQwKmsmMS6t2JZQ7i/2VvJw=",
+            "Payload": "qQWcuwAAAAAAAAAAAAAAAKAl8XcOCq2aS1Act9TH24pedetwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtUdSirqKQAAA=",
+            "V": "291",
+            "R": "10449312814161660085",
+            "S": "7159423797492421934"
           }
         }
       ],
