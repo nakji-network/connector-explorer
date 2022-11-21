@@ -37,7 +37,7 @@ function GridView({ data = Data["connectors"] }) {
                   {/* Title Box */}
                   <div className="flex items-center justify-center">
                     {/* Title */}
-                    <h3 className="mt-6 text-3xl font-bold text-gray-900 ">
+                    <h3 className="mt-6 text-2xl font-bold text-gray-900 ">
                       {connector.title}
                     </h3>
                     {/* Check Mark Icon */}

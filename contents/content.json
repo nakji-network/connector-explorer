@@ -4645,7 +4645,7 @@
     },
     {
       "name": "pancakeswapv2",
-      "title": "Pancakeswap V2",
+      "title": "PancakeswapV2",
       "author": "nakji_team",
       "verified": true,
       "active": true,
@@ -6906,7 +6906,7 @@
       "active": true,
       "description": "xDai/Gnosis Chain is an EVM compatible blockchain built for scalability, community, decentralization and sustainable growth. Disclaimer: the data is currently being streamed via nakji.evm stream.",
       "website": "https://polygon.technology/",
-      "icon": "https://cryptologos.cc/logos/gnosis-gno-gno-logo.png?v=023",
+      "icon": "https://miro.medium.com/max/2400/2*iBfk88VsFCTzdhKfaOarwg.png",
       "version": "0.0.0",
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
