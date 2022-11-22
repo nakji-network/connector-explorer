@@ -47,7 +47,7 @@ function ListView({ data = Data["connectors"] }) {
                       {/* Text */}
                       <div>
                         <div className="flex">
-                          <h2 className="text-left text-3xl sm:text-4xl text-gray-900 font-bold">
+                          <h2 className="text-left text-3xl sm:text-4xl text-gray-900 font-bold truncate">
                             {connector.title}
                           </h2>
                           {/* Check Mark Icon */}
