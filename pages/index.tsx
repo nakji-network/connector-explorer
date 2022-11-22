@@ -29,7 +29,7 @@ function classNames(...classes: string[]) {
 
 const Home: NextPage = () => {
   var connectorsData = Data.connectors;
-  const [gridView, setGridView] = useState(false);
+  const [gridView, setGridView] = useState(true);
   const [selected, setSelected] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
 
