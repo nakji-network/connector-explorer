@@ -486,7 +486,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "arbitrum",
       "title": "Arbitrum",
       "author": "nakji_team",
       "verified": true,
@@ -560,7 +560,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "avalanche",
       "title": "Avalanche",
       "author": "nakji_team",
       "verified": true,
@@ -1175,7 +1175,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "bnbchain",
       "title": "BNB Chain",
       "author": "nakji_team",
       "verified": true,
@@ -1728,7 +1728,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "ethereum",
       "title": "Ethereum",
       "author": "nakji_team",
       "verified": true,
@@ -1923,7 +1923,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "fantom",
       "title": "Fantom",
       "author": "nakji_team",
       "verified": true,
@@ -2363,7 +2363,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "harmony",
       "title": "Harmony",
       "author": "nakji_team",
       "verified": true,
@@ -2437,7 +2437,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "heco",
       "title": "HECO",
       "author": "nakji_team",
       "verified": true,
@@ -4031,7 +4031,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "metis",
       "title": "Metis",
       "author": "nakji_team",
       "verified": true,
@@ -4105,7 +4105,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "moonbeam",
       "title": "Moonbeam",
       "author": "nakji_team",
       "verified": true,
@@ -4179,7 +4179,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "moonriver",
       "title": "Moonriver",
       "author": "nakji_team",
       "verified": true,
@@ -4411,7 +4411,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "optimism",
       "title": "Optimism",
       "author": "nakji_team",
       "verified": true,
@@ -4808,7 +4808,7 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "polygon",
       "title": "Polygon",
       "author": "nakji_team",
       "verified": true,
@@ -6899,13 +6899,13 @@
       ]
     },
     {
-      "name": "evm",
+      "name": "xdai",
       "title": "xDai/Gnosis",
       "author": "nakji_team",
       "verified": true,
       "active": true,
       "description": "xDai/Gnosis Chain is an EVM compatible blockchain built for scalability, community, decentralization and sustainable growth. Disclaimer: the data is currently being streamed via nakji.evm stream.",
-      "website": "https://polygon.technology/",
+      "website": "https://docs.gnosischain.com/about/tokens/xdai",
       "icon": "https://miro.medium.com/max/2400/2*iBfk88VsFCTzdhKfaOarwg.png",
       "version": "0.0.0",
       "tags": ["EVM", "Layer 1"],
