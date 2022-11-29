@@ -2318,51 +2318,6 @@
       ]
     },
     {
-      "name": "ftx",
-      "title": "FTX",
-      "author": "nakji_team",
-      "verified": true,
-      "active": true,
-      "description": "FTX is a cryptocurrency exchange.",
-      "website": "https://ftx.com",
-      "icon": "https://cryptologos.cc/logos/ftx-token-ftt-logo.svg?v=023",
-      "version": "0.0.0",
-      "tags": ["Exchange"],
-      "datastreams": [
-        {
-          "name": "nakji.ftx.0_0_0.market_OpenInterest",
-          "schema": {
-            "asset": "string",
-            "ns": "string",
-            "openInterest": "int",
-            "openInterestValue": "int",
-            "s": "string",
-            "ts": {
-              "seconds": "int",
-              "nanos": "int"
-            }
-          },
-          "example_response": {
-            "asset": "ADA-PERP",
-            "ns": "",
-            "openInterest": 259960567,
-            "openInterestValue": 0,
-            "s": "",
-            "ts": {
-              "seconds": 1666759381,
-              "nanos": 187493000
-            }
-          }
-        }
-      ],
-      "versions": [
-        {
-          "number": "0.0.0",
-          "changelog": "Beta release"
-        }
-      ]
-    },
-    {
       "name": "harmony",
       "title": "Harmony",
       "author": "nakji_team",

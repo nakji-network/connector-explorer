@@ -60,7 +60,6 @@ function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-// TODO: Add states hooks for selecting items
 function PlaygroundPanel({
   datastreams,
   filteredDatastream,
@@ -77,16 +76,16 @@ function PlaygroundPanel({
         className="grid gap-4 grid-cols-3 pt-1 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-11"
       >
         <li className="min-h-52 min-h-0 hover:min-h-full py-2 col-span-3 flex flex-col rounded-lg bg-white text-center shadow-md">
-          <h3 className="text-left px-3  text-gray-500 text-lg font-bold">
+          <h3 className="text-left px-3 pb-1 text-gray-500 text-lg font-bold">
             Datastreams
           </h3>
 
-          {/* Lists */}
+          {/* Selectable Lists */}
           <ul className="text-left overflow-x-auto">
             {datastreams.map((datastream: any) => (
               <li
                 className={classNames(
-                  "text-left px-3 py-2 font-mono text-xs sm:text-sm",
+                  "text-left px-3 py-2 font-mono text-xs sm:text-sm cursor-pointer",
                   datastream.name == filteredDatastream.name
                     ? "bg-orange-primary text-white"
                     : "bg-white text-gray-900"
@@ -205,8 +204,20 @@ export async function getStaticPaths() {
       { params: { name: "huobi" } },
       { params: { name: "honeyswap" } },
       { params: { name: "bitmex" } },
-      { params: { name: "ftx" } },
       { params: { name: "bitfinex" } },
+      { params: { name: "arbitrum" } },
+      { params: { name: "avalanche" } },
+      { params: { name: "bnbchain" } },
+      { params: { name: "ethereum" } },
+      { params: { name: "fantom" } },
+      { params: { name: "harmony" } },
+      { params: { name: "heco" } },
+      { params: { name: "metis" } },
+      { params: { name: "moonbeam" } },
+      { params: { name: "moonriver" } },
+      { params: { name: "optimism" } },
+      { params: { name: "polygon" } },
+      { params: { name: "xdai" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };

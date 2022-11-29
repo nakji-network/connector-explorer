@@ -19,8 +19,6 @@ import Link from "next/link";
 // TODO: Add a filter bar (next release) 
 // https://stackoverflow.com/questions/59144468/how-to-filter-arrays-in-a-json-by-multiple-tags
 // TODO: Add dynamic data (statuses, traffic, etc) (next release)
-// TODO: Add static page generation for all known connectors instead of using hash router
-// https://stackoverflow.com/questions/63673235/nextjs-static-export-with-dynamic-routes
 // TODO: Refactor code into their own components
 
 function classNames(...classes: string[]) {
