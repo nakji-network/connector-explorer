@@ -498,7 +498,7 @@
       "tags": ["EVM", "Layer 2"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.arbitrum.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -517,7 +517,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.arbitrum.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -572,7 +572,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.avalanche.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -591,7 +591,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.avalanche.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1187,7 +1187,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.bsc.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1206,7 +1206,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.bsc.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1740,7 +1740,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.ethereum.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1759,7 +1759,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.ethereum.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1935,7 +1935,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.fantom.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -1954,7 +1954,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.fantom.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -2330,7 +2330,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.harmony.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -2349,7 +2349,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.harmony.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -2404,7 +2404,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.heco.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -2423,7 +2423,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.heco.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -3998,7 +3998,7 @@
       "tags": ["EVM", "Layer 2"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.metis.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4017,7 +4017,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.metis.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4072,7 +4072,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.moonbeam.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4091,7 +4091,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.moonbeam.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4146,7 +4146,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.moonriver.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4165,7 +4165,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.moonriver.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4378,7 +4378,7 @@
       "tags": ["EVM", "Layer 2"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.optimism.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4397,7 +4397,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.optimism.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4775,7 +4775,7 @@
       "tags": ["EVM", "Layer 2"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.polygon.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -4794,7 +4794,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.polygon.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -6866,7 +6866,7 @@
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
         {
-          "name": "nakji.evm.0_0_0.chain_block",
+          "name": "nakji.gnosis.0_0_0.chain_Block",
           "schema": {
             "ts": {
               "seconds": "int"
@@ -6885,7 +6885,7 @@
           }
         },
         {
-          "name": "nakji.evm.0_0_0.chain_tx",
+          "name": "nakji.gnosis.0_0_0.chain_Transaction",
           "schema": {
             "ts": {
               "seconds": "int"
