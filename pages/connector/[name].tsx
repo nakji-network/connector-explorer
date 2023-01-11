@@ -218,6 +218,8 @@ export async function getStaticPaths() {
       { params: { name: "optimism" } },
       { params: { name: "polygon" } },
       { params: { name: "xdai" } },
+      { params: { name: "okc" } },
+      { params: { name: "near" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };

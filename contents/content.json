@@ -1182,7 +1182,7 @@
       "active": true,
       "description": "Build N Build (BNB) Chain is a distributed blockchain network upon which developers and innovators can build decentralized applications (DApps) as part of the move to Web3. ",
       "website": "https://www.bnbchain.org/en",
-      "icon": "https://cryptologos.cc/logos/bnb-bnb-logo.png?v=023",
+      "icon": "https://raw.githubusercontent.com/nakji-network/connector-explorer/a7b1804365ccfc373cf1a15f4a86c95abfce5452/images/bnb.svg",
       "version": "0.0.0",
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
@@ -2004,7 +2004,7 @@
       "active": true,
       "description": "Flow is a fast, decentralized, and developer-friendly blockchain, designed as the foundation for a new generation of games, apps, and the digital assets that power them.",
       "website": "https://flow.com",
-      "icon": "https://cryptologos.cc/logos/flow-flow-logo.svg?v=023",
+      "icon": "https://assets-global.website-files.com/5f734f4dbd95382f4fdfa0ea/62743866c2a1ff97d43bb844_Group%2010.svg",
       "version": "0.0.0",
       "tags": ["Layer 1"],
       "datastreams": [
@@ -4208,6 +4208,176 @@
       ]
     },
     {
+      "name": "near",
+      "title": "NEAR",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "The NEAR protocol is a sharded, proof-of-stake, layer-one blockchain that is simple to use, secure and scalable.",
+      "website": "https://near.org/",
+      "icon": "https://raw.githubusercontent.com/nakji-network/connector-explorer/a7b1804365ccfc373cf1a15f4a86c95abfce5452/images/near.svg",
+      "version": "0.0.0",
+      "tags": ["Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.near.0_0_0.near_Block",
+          "schema": {
+            "author": "string",
+            "chunks": [
+              {
+                "balanceBurnt": "string",
+                "chunkHash": "string",
+                "encodedLength": "string",
+                "encodedMerkleRoot": "string",
+                "gasLimit": "string",
+                "gasUsed": "string",
+                "heightCreated": "string",
+                "heightIncluded": "string",
+                "outcomeRoot": "string",
+                "outgoingReceiptsRoot": "string",
+                "prevBlockHash": "string",
+                "prevStateRoot": "string",
+                "signature": "string",
+                "txRoot": "string"
+              }
+            ],
+            "header": {
+              "approvals": {},
+              "block_merkle_root": "string",
+              "block_ordinal": "int",
+              "challenges_result": {},
+              "challenges_root": "string",
+              "chunk_headers_root": "string",
+              "chunk_mask": {},
+              "chunk_receipts_root": "string",
+              "chunk_tx_root": "string",
+              "chunks_included": "int",
+              "epoch_id": "string",
+              "epoch_sync_data_hash": "string",
+              "gas_price": "string",
+              "hash": "string",
+              "height": "int",
+              "last_ds_final_block": "string",
+              "last_final_block": "string",
+              "latest_protocol_version": "int",
+              "next_bp_hash": "string",
+              "next_epoch_id": "string",
+              "outcome_root": "string",
+              "prev_hash": "string",
+              "prev_height": "int",
+              "prev_state_root": "string",
+              "random_value": "string",
+              "signature": "string",
+              "timestamp": "int",
+              "timestamp_nanosec": "int",
+              "total_supply": "string",
+              "validator_proposals": {}
+            },
+            "ts": { "seconds": "int", "nanos": "int" } 
+          },
+          "example_response": {
+            "author": "nearcrowd.poolv1.near",
+            "chunks": [
+              {
+                "balanceBurnt": "AO4fNMcR8HYPAAAAAAAAAA==",
+                "chunkHash": "DndvE6k5ag8nU1NmwVhDdq5oZP7y8DLZ3mgx6fNj5w7o",
+                "encodedLength": "1559",
+                "encodedMerkleRoot": "2c4tebhQKydRpdH9G3JpuppDRoxyUZQ1ou98bCEwGy97",
+                "gasLimit": "1000000000000000",
+                "gasUsed": "2852715307438",
+                "heightCreated": "82580313",
+                "heightIncluded": "82580313",
+                "outcomeRoot": "G7TzpXGbKPWUUCMqPFJ9aTpcKR5fREMiYycWQWuhkX7U",
+                "outgoingReceiptsRoot": "DTs2wY39EUWvdXY6SeoHZYiLyvCBJs8WRR7zrAkArjNo",
+                "prevBlockHash": "8dCubCg2ncdGxbFRZaTTfbUpBYGFfUxpa3AJhgpG1ECW",
+                "prevStateRoot": "7b8MKRu6GXybUA7hpc2Y8Vj9aFKhf3S6rX8fSvdN4Q8d",
+                "signature": "ed25519:4ZmQPnBwXmKrdPZX6bQFLBJ6ZqUw1ct6rdvP2n3KA97xHqGqMcT4moBGY13QGvAr6jzgDzcZHXXrMTdGQkLPMEtD",
+                "txRoot": "E8fgJDaSGaretEzKdspTvtgXjUgPpixwkHyXdAM7nmvQ"
+              }
+            ],
+            "header": {
+              "approvals": {},
+              "block_merkle_root": "499oxbfipVExPu4hrRT1yzEiAyvk4MDAHo6z4fm4zNq6",
+              "block_ordinal": 72547603,
+              "challenges_result": {},
+              "challenges_root": "11111111111111111111111111111111",
+              "chunk_headers_root": "3gHaTJEjrVwnBC6TdkQPgXpDLRRta9Y6gveY2EkzQqzL",
+              "chunk_mask": {},
+              "chunk_receipts_root": "GoTCUzjdKfsd6hCv2y9i2ZLSE6X1EMFiQ9VJuM8Znqdp",
+              "chunk_tx_root": "9XMWJvs9WnNULEFGtkWUjeoR3QgkbSLnQpgwc6XfsMy6",
+              "chunks_included": 4,
+              "epoch_id": "EokTjg7RtQNFSkycGnJcKrYrcrfVyDEFTocHCZShmQes",
+              "epoch_sync_data_hash": "",
+              "gas_price": "AOH1BQAAAAAAAAAAAAAAAA==",
+              "hash": "3Bu22K7Xm4qUp7cmowWHVBxo8iH9gCuw2rrcBZn55GH6",
+              "height": 82580313,
+              "last_ds_final_block": "8dCubCg2ncdGxbFRZaTTfbUpBYGFfUxpa3AJhgpG1ECW",
+              "last_final_block": "E1PYXWRYZH5JkMUJba1BhAqpj9LSHbdaAr8ZisUVMn4y",
+              "latest_protocol_version": 57,
+              "next_bp_hash": "J46B5dKF45aR2o9WDLk6G4hDqoVG3pYaVvgfxonR9cX2",
+              "next_epoch_id": "BsfTz2H8i8zEzPXZV8fdYahq78US9UXoqASVX14rdm8",
+              "outcome_root": "BHwhEYXxDfqsnDKE6W1tTYdf9wykFGj4Z2SbkqwCs9F4",
+              "prev_hash": "8dCubCg2ncdGxbFRZaTTfbUpBYGFfUxpa3AJhgpG1ECW",
+              "prev_height": 82580312,
+              "prev_state_root": "9Govuyb6BfzWaE5f427T8wzhs2K5ZjZjAtAWmViuRCUN",
+              "random_value": "CkrujXbDMCV6XEXBZNzubF7Y3Zq2nqSX7i5yjEE8Y7tG",
+              "signature": "ed25519:2G8xNkQDMZVGcwivU25XABQXG91qGSPt2vU24gMPDc4VmzRPg5mzYXdYUTiGfWqPN5B2fQ3pZYsMq5oJnzBtivcM",
+              "timestamp": 1673293923848149200,
+              "timestamp_nanosec": 1673293923848149200,
+              "total_supply": "dsRwMLGxzZF+tiW//zYAAA==",
+              "validator_proposals": {}
+            },
+            "ts": { "seconds": 1673293923, "nanos": 848149000 } 
+          }
+        },
+        {
+          "name": "nakji.near.0_0_0.near_Transaction",
+          "schema": {
+            "actions": [
+              {
+                "functionCall": {
+                  "args": "string",
+                  "deposit": "string",
+                  "gas": "string",
+                  "methodName": "string"
+                }
+              }
+            ],
+            "hash": "string",
+            "nonce": "int",
+            "public_key": "string",
+            "receiver_id": "string",
+            "signer_id": "string",
+            "ts": { "seconds": "int", "nanos": "int" }
+          },
+          "example_response": {
+            "actions": [
+              {
+                "functionCall": {
+                  "args": "eyJ0YXNrX29yZGluYWwiOjEsImFwcHJvdmUiOmZhbHNlLCJyZWplY3Rpb25fcmVhc29uIjoi0L/QviDQvdC10LzRgyDQu9C10YLQsNC10YIg0LXQtNC40L3QvtGA0L7Qsy4ifQ==",
+                  "deposit": "AAAAAAAAAAAAAAAAAAAAAA==",
+                  "gas": "80000000000000",
+                  "methodName": "submit_review"
+                }
+              }
+            ],
+            "hash": "3LVCsP1HJYtXrRqakHLoVqNP48MSrWGoAGxAdHViS3Tw",
+            "nonce": 82503367000102,
+            "public_key": "ed25519:4M2PujaG21vYtDQPEj43FmB9EsrxtLHByJxgZosxnqvA",
+            "receiver_id": "app.nearcrowd.near",
+            "signer_id": "moneymoneymoney.near",
+            "ts": { "seconds": 1673293671, "nanos": 102684000 }
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "opensea",
       "title": "OpenSea",
       "author": "nakji_team",
@@ -4355,6 +4525,80 @@
             "taker": "uilXmG7sHd33RUTBrH4DGL3Cyiw=",
             "price": "apTXT0MAAA==",
             "metadata": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "okc",
+      "title": "OKC",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "EVM & IBC-compatible, OKC by OKX is a L1 blockchain network built on Cosmos that aims for optimal interoperability and performance",
+      "website": "https://www.okx.com/okc",
+      "icon": "https://github.com/nakji-network/connector-explorer/blob/main/images/okc.png?raw=true",
+      "version": "0.0.0",
+      "tags": ["EVM", "Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.okc.0_0_0.chain_Block",
+          "schema": {
+            "Difficulty": "int",
+            "GasLimit": "int",
+            "GasUsed": "int",
+            "Hash": "string",
+            "Nonce": "int",
+            "Number": "int",
+            "ts": { "seconds": "int" }
+          },
+          "example_response": {
+            "Difficulty": 0,
+            "GasLimit": 4294967295,
+            "GasUsed": 0,
+            "Hash": "0x2470d08e998589898cb8750d1c91fad9a79b53a4a831e0ed3142644b31df04c9",
+            "Nonce": 0,
+            "Number": 16618445,
+            "ts": { "seconds": 1673407701 }
+          }
+        },
+        {
+          "name": "nakji.okc.0_0_0.chain_Transaction",
+          "schema": {
+            "AccountNonce": "int",
+            "Amount": "int",
+            "From": "string",
+            "GasLimit": "int",
+            "Hash": "string",
+            "Payload": "string",
+            "Price": "int",
+            "R": "int",
+            "Recipient": "string",
+            "S": "int",
+            "Size": { "Int": "int", "Exp": "int", "Status": "int", "NaN": "boolean" },
+            "V": "int",
+            "ts": { "seconds": "int" }
+          },
+          "example_response": {
+            "AccountNonce": 4,
+            "Amount": 0,
+            "From": "T3mlJ9YGUeUk9Lvjg08iT7t0hFA=",
+            "GasLimit": 214078,
+            "Hash": "0xca6d53f16d855c1275dbc599c32d9f9043286e622b8dfe73dec3e58a0fe63ebd",
+            "Payload": "Usf43A==",
+            "Price": 100000000,
+            "R": -5683823101323933130,
+            "Recipient": "HMTZgeiXo9LneFCTpkjAp1+tBFM=",
+            "S": -3346123618240061893,
+            "Size": { "Int": 107, "Exp": 0, "Status": 2, "NaN": false },
+            "V": 168,
+            "ts": { "seconds": 1673420935 }
           }
         }
       ],
