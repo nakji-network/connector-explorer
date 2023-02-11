@@ -9,22 +9,21 @@ function GridView({ data = Data["connectors"] }) {
     <div>
       <ul
         role="list"
-        className="grid grid-cols-1 gap-8 py-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        className="py-4 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         {data.map(
           (connector: any) => (
-            <Link href={`/connector/${connector.name}`}>
+            <Link key={connector.name} href={`/connector/${connector.name}`}>
               <li
-                key={connector.name}
-                className="col-span-1 flex flex-col rounded-3xl bg-white text-center shadow-lg"
+                className="flex flex-col text-center bg-white shadow-lg col-span-1 rounded-3xl"
                 // onClick={() => router.push('/connector/' + connector.name)}
               >
-                <div className="flex flex-1 flex-col p-8">
+                <div className="flex flex-col flex-1 p-8">
                   {/* Icon */}
 
-                  <div className="flex place-content-center	">
+                  <div className="flex place-content-center ">
                     
-                    <div className=" flex bg-gray-800 h-36 w-36 rounded-lg ">
+                    <div className="flex bg-gray-800 rounded-lg  h-36 w-36">
                       {/* <svg className="absolute h-36 w-36" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 800" opacity="0.84" width="800" height="800"><g strokeWidth="0.5" stroke="hsla(37, 100%, 100%, 1)" fill="none"><rect width="100" height="100" x="0" y="0"></rect><rect width="100" height="100" x="100" y="0"></rect><rect width="100" height="100" x="200" y="0"></rect><rect width="100" height="100" x="300" y="0"></rect><rect width="100" height="100" x="400" y="0"></rect><rect width="100" height="100" x="500" y="0"></rect><rect width="100" height="100" x="600" y="0"></rect><rect width="100" height="100" x="700" y="0"></rect><rect width="100" height="100" x="800" y="0"></rect><rect width="100" height="100" x="0" y="100"></rect><rect width="100" height="100" x="100" y="100"></rect><rect width="100" height="100" x="200" y="100"></rect><rect width="100" height="100" x="300" y="100"></rect><rect width="100" height="100" x="400" y="100"></rect><rect width="100" height="100" x="500" y="100"></rect><rect width="100" height="100" x="600" y="100"></rect><rect width="100" height="100" x="700" y="100"></rect><rect width="100" height="100" x="800" y="100"></rect><rect width="100" height="100" x="0" y="200"></rect><rect width="100" height="100" x="100" y="200"></rect><rect width="100" height="100" x="200" y="200"></rect><rect width="100" height="100" x="300" y="200"></rect><rect width="100" height="100" x="400" y="200"></rect><rect width="100" height="100" x="500" y="200"></rect><rect width="100" height="100" x="600" y="200"></rect><rect width="100" height="100" x="700" y="200"></rect><rect width="100" height="100" x="800" y="200"></rect><rect width="100" height="100" x="0" y="300"></rect><rect width="100" height="100" x="100" y="300"></rect><rect width="100" height="100" x="200" y="300"></rect><rect width="100" height="100" x="300" y="300"></rect><rect width="100" height="100" x="400" y="300"></rect><rect width="100" height="100" x="500" y="300"></rect><rect width="100" height="100" x="600" y="300"></rect><rect width="100" height="100" x="700" y="300"></rect><rect width="100" height="100" x="800" y="300"></rect><rect width="100" height="100" x="0" y="400"></rect><rect width="100" height="100" x="100" y="400"></rect><rect width="100" height="100" x="200" y="400"></rect><rect width="100" height="100" x="300" y="400"></rect><rect width="100" height="100" x="400" y="400"></rect><rect width="100" height="100" x="500" y="400"></rect><rect width="100" height="100" x="600" y="400"></rect><rect width="100" height="100" x="700" y="400"></rect><rect width="100" height="100" x="800" y="400"></rect><rect width="100" height="100" x="0" y="500"></rect><rect width="100" height="100" x="100" y="500"></rect><rect width="100" height="100" x="200" y="500"></rect><rect width="100" height="100" x="300" y="500"></rect><rect width="100" height="100" x="400" y="500"></rect><rect width="100" height="100" x="500" y="500"></rect><rect width="100" height="100" x="600" y="500"></rect><rect width="100" height="100" x="700" y="500"></rect><rect width="100" height="100" x="800" y="500"></rect><rect width="100" height="100" x="0" y="600"></rect><rect width="100" height="100" x="100" y="600"></rect><rect width="100" height="100" x="200" y="600"></rect><rect width="100" height="100" x="300" y="600"></rect><rect width="100" height="100" x="400" y="600"></rect><rect width="100" height="100" x="500" y="600"></rect><rect width="100" height="100" x="600" y="600"></rect><rect width="100" height="100" x="700" y="600"></rect><rect width="100" height="100" x="800" y="600"></rect><rect width="100" height="100" x="0" y="700"></rect><rect width="100" height="100" x="100" y="700"></rect><rect width="100" height="100" x="200" y="700"></rect><rect width="100" height="100" x="300" y="700"></rect><rect width="100" height="100" x="400" y="700"></rect><rect width="100" height="100" x="500" y="700"></rect><rect width="100" height="100" x="600" y="700"></rect><rect width="100" height="100" x="700" y="700"></rect><rect width="100" height="100" x="800" y="700"></rect><rect width="100" height="100" x="0" y="800"></rect><rect width="100" height="100" x="100" y="800"></rect><rect width="100" height="100" x="200" y="800"></rect><rect width="100" height="100" x="300" y="800"></rect><rect width="100" height="100" x="400" y="800"></rect><rect width="100" height="100" x="500" y="800"></rect><rect width="100" height="100" x="600" y="800"></rect><rect width="100" height="100" x="700" y="800"></rect><rect width="100" height="100" x="800" y="800"></rect></g></svg> */}
                       <img
                         className="p-3 mx-auto h-36 w-36 "
@@ -41,7 +40,7 @@ function GridView({ data = Data["connectors"] }) {
                       {connector.title}
                     </h3>
                     {/* Check Mark Icon */}
-                    <span className="ml-2 mt-6">
+                    <span className="mt-6 ml-2">
                      <svg
                         width="24"
                         height="24"
@@ -56,10 +55,10 @@ function GridView({ data = Data["connectors"] }) {
                       </svg>
                     </span>
                   </div>
-                  <dl className="mt-1 flex flex-grow flex-col justify-between">
+                  <dl className="flex flex-col justify-between flex-grow mt-1">
                     {/* Subtitling */}
                     <dt className="sr-only">Subtitle</dt>
-                    <dd className="text-m text-gray-800">
+                    <dd className="text-gray-800 text-m">
                       {connector.subtitle}
                     </dd>
 
@@ -67,7 +66,7 @@ function GridView({ data = Data["connectors"] }) {
                     <dt className="sr-only">Tags</dt>
                     <dd className="mt-3">
                       {connector.tags.map((tag: string) => (
-                        <span key={tag} className="rounded-full inline-block bg-orange-primary px-2 mx-1 py-1 text-xs font-medium text-white">
+                        <span key={tag} className="inline-block px-2 py-1 mx-1 text-xs font-medium text-white rounded-full bg-orange-primary">
                           {tag}
                         </span>
                       ))}
