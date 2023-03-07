@@ -4067,7 +4067,7 @@
       "active": true,
       "description": "Moonbeam is an Ethereum-compatible smart contract platform that makes it easy to build applications on Polkadot. ",
       "website": "https://moonbeam.network/",
-      "icon": "https://moonbeam.network/wp-content/uploads/2020/03/cropped-Moonbeam-Favicon-550px.png",
+      "icon": "https://s2.coinmarketcap.com/static/img/coins/64x64/6836.png",
       "version": "0.0.0",
       "tags": ["EVM", "Layer 1"],
       "datastreams": [
