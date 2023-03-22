@@ -14,6 +14,7 @@ import { Combobox } from "@headlessui/react";
 import { Switch } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { useRouter } from 'next/router'
 
 // Roadmap: 
 // TODO: Add a filter bar (next release) 
@@ -26,7 +27,10 @@ function classNames(...classes: string[]) {
 }
 
 const Home: NextPage = () => {
+  
   var connectorsData = Data.connectors;
+  
+  const router = useRouter()
   const [gridView, setGridView] = useState(true);
   const [selected, setSelected] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -54,15 +58,17 @@ const Home: NextPage = () => {
                       connector === null ? "" : connector.name
                     }
                     onChange={(event) => setSearchQuery(event.target.value as string)}
+                    onKeyUp={(e: { key: string; }) => e.key === "Enter" && selected != null && router.push(`/connector/${selected["name"]}`)}
                     placeholder="Search for a connector"
                   />
                 </div>
                 <Transition
-                  as={Fragment}
+                  // as={Fragment}
                   leave="transition ease-in duration-100"
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                   afterLeave={() => setSearchQuery("")}
+                  
                 >
                   <Combobox.Options className="absolute mt-2 max-h-72 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg focus:outline-none sm:text-sm">
                     {filteredPeople.length === 0 ? (
@@ -72,6 +78,7 @@ const Home: NextPage = () => {
                     ) : (
                       filteredPeople.map((connector) => (
                         <Combobox.Option
+                          as="div"
                           key={connector.name}
                           className={({ active }) =>
                             `relative cursor-default select-none py-3 px-4 focus:outline-none ${
@@ -81,23 +88,24 @@ const Home: NextPage = () => {
                             }`
                           }
                           value={connector}
+                          
                         >
                           {({ active, selected }) => (
                             <Link href={`/connector/${connector.name}`}>
-                            <div className="flex items-center">
-                              <img
-                                src={connector.icon}
-                                alt=""
-                                className="h-8 w-8  flex-shrink-0 rounded-full"
-                              />
+                              <div className="flex items-center">
+                                <img
+                                  src={connector.icon}
+                                  alt=""
+                                  className="h-8 w-8  flex-shrink-0 rounded-full"
+                                />
 
-                              <span className=" ml-3 block truncate text-base font-bold">
-                                {connector.title}
-                              </span>
-                              <span className="ml-3 block italic truncate">
-                                {connector.name}
-                              </span>
-                            </div>
+                                <span className=" ml-3 block truncate text-base font-bold">
+                                  {connector.title}
+                                </span>
+                                <span className="ml-3 block italic truncate">
+                                  {connector.name}
+                                </span>
+                              </div>
                             </Link>
                           )}
                         </Combobox.Option>

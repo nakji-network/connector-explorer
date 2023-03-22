@@ -45,7 +45,7 @@ function ListView({ data = Data["connectors"] }) {
                       </div>
 
                       {/* Text */}
-                      <div>
+                      <div className="grow">
                         <div className="flex">
                           <h2 className="text-left text-3xl sm:text-4xl text-gray-900 font-bold">
                             {connector.title}
@@ -73,7 +73,7 @@ function ListView({ data = Data["connectors"] }) {
                         <p className="text-left leading-4 sm:leading-4 md:leading-5 lg:leading-6 pt-2 sm:pt-3 text-base sm:text-lg overflow-ellipsis">
                           {connector.description}
                         </p>
-                        <p className="absolute bottom-2 right-2 text-right object-right-bottom pt-2 sm:pt-3 text-md sm:text-lg font-bold">
+                        <p className="mt-auto h-fit ml-auto text-right object-right-bottom bottom-2 right-2 pt-3 sm:pt-4 text-md sm:text-lg font-bold">
                           nakji.{connector.name}.*
                         </p>
                       </div>

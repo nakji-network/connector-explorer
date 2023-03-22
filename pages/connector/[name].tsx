@@ -28,7 +28,7 @@ function AboutPanel({
   datastreams: any;
 }) {
   return (
-    <div>
+    <div >
       <div>
         <h1 className="text-2xl sm:text-2xl md:text-3xl text-black-100">
           Description
@@ -41,7 +41,7 @@ function AboutPanel({
         <h1 className="text-2xl sm:text-2xl md:text-3xl text-black-100">
           Datastreams
         </h1>
-        <ul role="list" className="">
+        <ul role="list" className="overflow-x-auto">
           {datastreams.map((datastream: any) => (
             <li
               key={datastream.name}
@@ -73,9 +73,9 @@ function PlaygroundPanel({
     <div>
       <ul
         role="list"
-        className="grid gap-4 grid-cols-3 pt-1 sm:grid-cols-7 md:grid-cols-7 lg:grid-cols-11"
+        className="grid gap-4 grid-cols-4 pt-1 sm:grid-cols-8 md:grid-cols-8 lg:grid-cols-12"
       >
-        <li className="min-h-52 min-h-0 hover:min-h-full py-2 col-span-3 flex flex-col rounded-lg bg-white text-center shadow-md">
+        <li className="min-h-52 min-h-0 hover:min-h-full py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-md">
           <h3 className="text-left px-3 pb-1 text-gray-500 text-lg font-bold">
             Datastreams
           </h3>
@@ -106,7 +106,7 @@ function PlaygroundPanel({
             {filteredDatastream.name + ":\n" + JSON.stringify(filteredDatastream.schema, null, 2)}
           </pre>
         </li>
-        <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg overflow-x-auto	overflow-y-clip">
+        <li className="min-h-52 min-h-0 hover:min-h-full px-3 py-2 col-span-4 sm:col-span-8 md:col-span-8 lg:col-span-4 flex flex-col rounded-lg bg-white text-center shadow-lg overflow-x-auto	overflow-y-clip">
           <h3 className="text-left  text-gray-500 text-lg font-bold">
             Example Response
           </h3>
@@ -220,6 +220,8 @@ export async function getStaticPaths() {
       { params: { name: "xdai" } },
       { params: { name: "okc" } },
       { params: { name: "near" } },
+      { params: { name: "klaytn" } },
+      { params: { name: "klayswap" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };

@@ -2670,6 +2670,198 @@
       ]
     },
     {
+      "name": "klaytn",
+      "title": "Klaytn",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Klaytn is an open-source public blockchain for all who wish to build, work, or play in the metaverse.",
+      "website": "https://www.klaytn.com/",
+      "icon": "https://cryptologos.cc/logos/klaytn-klay-logo.svg?v=023",
+      "version": "0.0.0",
+      "tags": ["EVM"],
+      "datastreams": [
+        {
+          "name": "klaytn.klaytn.0_0_0.chain_Block",
+          "schema": {
+            "Difficulty": "int",
+            "GasLimit": "int",
+            "GasUsed": "int",
+            "Hash": "string",
+            "Nonce": "int",
+            "Number": "int",
+            "ts": { "seconds": "int" }
+          },
+          "example_response": {
+            "Difficulty": 1,
+            "GasLimit": 999999999999,
+            "GasUsed": 78553,
+            "Hash": "0x34f648a50279212b86a80b2acf9f0c1c2b512342b8a31c16e877224138e381cf",
+            "Nonce": 0,
+            "Number": 117539863,
+            "ts": { "seconds": 1679450540 }
+          }
+        },
+        {
+          "name": "klaytn.klaytn.0_0_0.chain_Transaction",
+          "schema": {
+            "AccountNonce": "int",
+            "Amount": "int",
+            "From": "string",
+            "GasLimit": "int",
+            "Hash": "string",
+            "Payload": "string",
+            "Price": "int",
+            "R": "int",
+            "Recipient": "string",
+            "S": "int",
+            "Size": { "Int": "int", "Exp": "int", "Status": "int", "NaN": "boolean" },
+            "V": "int",
+            "ts": { "seconds": "int" }
+          },
+          "example_response": {
+            "AccountNonce": 228,
+            "Amount": 0,
+            "From": "VbvVmDO5Dij9Y7SyneY2qfd6LKM=",
+            "GasLimit": 10000010,
+            "Hash": "0xeb80ea388ea165310a4201edb77b5fd82b0a2936865cd4d67c61276de9e622c1",
+            "Payload": "AAAAAAA...AAA=",
+            "Price": 750000000000,
+            "R": 3802379270863497639,
+            "Recipient": "t9Tb69+k9B74EEe/u0zDEauxYEU=",
+            "S": -7073428458644449236,
+            "Size": { "Int": 977, "Exp": 0, "Status": 2, "NaN": false },
+            "V": 16470,
+            "ts": { "seconds": 1679451275 }
+          }
+        },
+        {
+          "name": "klaytn.klaytn.0_0_0.chain_Block-1m0s",
+          "schema": {
+            "Event": "string",
+            "Data": {
+              "ts": "string",
+              "Hash": "string",
+              "Number": "string",
+              "GasLimit": "string",
+              "GasUsed": "string"
+              }
+            },
+          "example_response": {
+            "Event": "klaytn.klaytn.0_0_0.chain_Block",
+            "Data": {
+              "ts": "2023-03-22T02:20:45Z",
+              "Hash": "0x8cde37c76af906b4fb1fe29249ec3fceba045c5d1c94646001e433a160005f7f",
+              "Difficulty": "1",
+              "Number": "117540968",
+              "GasLimit": "999999999999",
+              "GasUsed": "1437843"
+            }
+          }
+        },
+        {
+          "name": "klaytn.klaytn.0_0_0.chain_Transaction-1m0s",
+          "schema": {
+            "Event": "string",
+            "Data": {
+              "ts": "string",
+              "From": "string",
+              "Hash": "string",
+              "Size": "int",
+              "AccountNonce": "string",
+              "Price": "string",
+              "GasLimit": "string",
+              "Recipient": "string",
+              "Payload": "string",
+              "V": "string",
+              "R": "string",
+              "S": "string"
+            }
+          },
+          "example_response": {
+            "Event": "klaytn.klaytn.0_0_0.chain_Transaction",
+            "Data": {
+              "ts": "2023-03-22T02:23:01Z",
+              "From": "g2829QgmG4dZQ5BTF39CqBG9WB8=",
+              "Hash": "0xd1e67e0a30e84357e1acf6e0d3b4a7905b5d2dbf2ca7f647b16baef98c5eb993",
+              "Size": 177,
+              "AccountNonce": "42056",
+              "Price": "50000000000",
+              "GasLimit": "20000000",
+              "Recipient": "Fmjnwg352Wdc7aP+rgLtoG3S1UY=",
+              "Payload": "qQWcuwAAAAAAAAAAAAAAALHYWa82SSsunK6Jn9+QxBtA+ODdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG8FtZ07IAAA=",
+              "V": "16470",
+              "R": "14700696408678854125",
+              "S": "10362118431695924012"
+            }
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
+      "name": "klayswap",
+      "title": "KLAYswap",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "KLAYswap is a decentralized autonomous protocol designed to raise the value of KSP, while automatically distributing KSP yields",
+      "website": "https://klayswap.com/",
+      "icon": "https://klayswap.com/img/logo/logo.svg",
+      "version": "0.0.0",
+      "tags": ["EVM", "KLAY", "KSP"],
+      "datastreams": [
+        {
+          "name": "nakji.klayswap.0_0_0.market_Trade",
+          "schema": {
+            "Value": "int"
+          },
+          "example_response": {
+            "Value": "0x7a5f8c7c1e5b5b1f74e4f8eb6a80f0514ec0d75f"
+          }
+        },
+        {
+          "name": "nakji.klayswap.0_0_0.liquiditypool_Change",
+          "schema": {
+            "Value": "int"
+          },
+          "example_response": {
+            "Value": "0x7a5f8c7c1e5b5b1f74e4f8eb6a80f0514ec0d75f"
+          }
+        },
+        {
+          "name": "nakji.klayswap.0_0_0.liquiditypool_Reserve",
+          "schema": {
+            "Value": "int"
+          },
+          "example_response": {
+            "Value": "0x7a5f8c7c1e5b5b1f74e4f8eb6a80f0514ec0d75f"
+          }
+        },
+        {
+          "name": "nakji.klayswap.0_0_0.liquiditypool_Reserve-1m0s",
+          "schema": {
+            "Value": "int"
+          },
+          "example_response": {
+            "Value": "0x7a5f8c7c1e5b5b1f74e4f8eb6a80f0514ec0d75f"
+          }
+        }
+
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Beta release"
+        }
+      ]
+    },
+    {
       "name": "makerdao",
       "title": "Makerdao",
       "author": "nakji_team",
@@ -4598,6 +4790,188 @@
             "S": -3346123618240061893,
             "Size": { "Int": 107, "Exp": 0, "Status": 2, "NaN": false },
             "V": 168,
+            "ts": { "seconds": 1673420935 }
+          }
+        },
+        {
+          "name": "nakji.okc.0_0_0.chain_Transaction-1m0s",
+          "schema": {
+            "ts": "string",
+            "From": "string",
+            "Hash": "string",
+            "Size": "int",
+            "AccountNonce": "string",
+            "Price": "string",
+            "GasLimit": "string",
+            "Recipient": "string",
+            "Payload": "string",
+            "V": "string",
+            "R": "string",
+            "S": "string"
+          },
+          "example_response": {
+            "ts": "2023-03-22T01:40:21Z",
+            "From": "6uljQjpY1lGB45SvSCah+MAjqA0=",
+            "Hash": "0xe50991b14341c16ef5e8da30bf64158b5648528c2d3a1b006c7670034bff0b00",
+            "Size": 464,
+            "AccountNonce": "339",
+            "Price": "500000000",
+            "GasLimit": "2000000",
+            "Recipient": "1rzkVDFrjd+3a7e7G1e4lCsJrNU=",
+            "Payload": "AAA...AAAA=",
+            "V": "168",
+            "R": "5953268277482419177",
+            "S": "2823894527002722779"
+          }
+        },
+        {
+          "name": "nakji.okc.0_0_0.chain_Block-1m0s",
+          "schema": {
+            "ts": "string",
+            "Hash": "string",
+            "Number": "string",
+            "GasLimit": "string",
+            "GasUsed": "string"
+             },
+          "example_response": {
+            "ts": "2023-03-22T01:39:59Z",
+            "Hash": "0x3391e7a9d437119f1d852652a8b466ba8b40c80fd7858ce63913255f0b5a3760",
+            "Number": "18207995",
+            "GasLimit": "4294967295",
+            "GasUsed": "348812"
+             }
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_Transfer",
+          "schema": {
+            "block": "int",
+            "from": "string",
+            "idx": "int",
+            "to": "string",
+            "ts": { "seconds": "int" },
+            "tx": "string",
+            "value": "string"
+          },
+          "example_response": {
+            "block": 18208432,
+            "from": "AAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "idx": 1496,
+            "to": "mQcznXWHGbLglyLFTkx6wRdFh/g=",
+            "ts": { "seconds": 1679450859 },
+            "tx": "dThcIS99qzS9PpcM/+KD3z5H587jSm/eLZmrbq1rLp0=",
+            "value": "BgqAA0Ax8XEQAAA="
+          }
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_Withdrawn",
+          "schema": {
+            "amount": "string",
+            "block": "int",
+            "idx": "int",
+            "reward": "string",
+            "ts": { "seconds": "int" },
+            "tx": "string",
+            "user": "string"
+          },
+          "example_response": {
+            "amount": "c+Z+VYkqinAAAA==",
+            "block": 15430034,
+            "idx": 11,
+            "reward": "+bD8Opv1oAA=",
+            "ts": { "seconds": 1668761679 },
+            "tx": "TTXgqNaYR2Wmnu5H0S3MbzguA1TeA9zkZ9Q81faq5gw=",
+            "user": "WfVs1mVYKY4R+2yRhccGyjTaYCA="
+          }
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_Staked",
+          "schema": {
+            "amount": "string",
+            "block": "int",
+            "idx": "int",
+            "term": "string",
+            "ts": { "seconds": "int" },
+            "tx": "string",
+            "user": "string"
+          },
+          "example_response": {
+            "amount": "AlG8My2Zf40MAAA=",
+            "block": 16397815,
+            "idx": 1,
+            "term": "AW4=",
+            "ts": { "seconds": 1672569125 },
+            "tx": "sYxycaLmN+U1lTNvL0y4J8NRLKHLWjhrn2l6KfxvIk4=",
+            "user": "hBlD4PA2BPbAWvanfUTDj4nDjxs="
+          }
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_Approval",
+          "schema": {
+            "block": "int",
+            "idx": "int",
+            "owner": "string",
+            "spender": "string",
+            "ts": { "seconds": "int" },
+            "tx": "string",
+            "value": "string"
+          },
+          "example_response": {
+            "block": 18114544,
+            "idx": 18,
+            "owner": "f7L0eOrnG3q1mBOHQokpH8RAYwA=",
+            "spender": "PJJBRh4RgX/8aZSvPUZ/BW9Ie2c=",
+            "ts": { "seconds": 1679094025 },
+            "tx": "raA6/2Gvjl80Gx0kmYyxG9tgT8Uzg5Ne04gmfDhNhTo=",
+            "value": "IE/OXj4lAmEQAAAA"
+          }          
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_MintClaimed",
+          "schema": {
+            "block": "int",
+            "idx": "int",
+            "rank": "string",
+            "term": "string",
+            "ts": { "seconds": "int" },
+            "tx": "string",
+            "user": "string"
+          },
+          "example_response": {
+            "block": 18123497,
+            "idx": 8,
+            "rank": "BgKySw==",
+            "term": "AXA=",
+            "ts": { "seconds": 1679128052 },
+            "tx": "7YIgAR1YZwaz5aXMV4Ru57YJBJzhKQqdiYWbOggy3/8=",
+            "user": "25IVvdUsZSpsis3CiTW3mQu2I7k="
+          }
+        },
+        {
+          "name": "nakji.okc_contracts.0_0_0.cOKC_RankClaimed",
+          "schema": {
+            "ContractAddress": "string",
+            "CumulativeGasUsed": "int",
+            "GasUsed": "int",
+            "Logs": "string",
+            "LogsBloom": "string",
+            "PostState": "string",
+            "Root": "string",
+            "Status": "int",
+            "TransactionHash": "string",
+            "TransactionIndex": "int",
+            "ts": { "seconds": "int" }
+          },
+          "example_response": {
+            "ContractAddress": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "CumulativeGasUsed": 0,
+            "GasUsed": 0,
+            "Logs": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "LogsBloom": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "PostState": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "Root": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "Status": 1,
+            "TransactionHash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+            "TransactionIndex": 0,
             "ts": { "seconds": 1673420935 }
           }
         }
