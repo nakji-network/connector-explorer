@@ -5456,7 +5456,7 @@
     },
     {
       "name": "sui",
-      "title": "Sui",
+      "title": "Sui [Alpha]",
       "author": "nakji_team",
       "verified": true,
       "active": true,
@@ -5501,7 +5501,7 @@
       "versions": [
         {
           "number": "0.0.0",
-          "changelog": "Beta release"
+          "changelog": "Alpha testing"
         }
       ]
     },
