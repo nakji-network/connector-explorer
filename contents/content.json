@@ -5455,6 +5455,57 @@
       ]
     },
     {
+      "name": "sui",
+      "title": "Sui [Alpha]",
+      "author": "nakji_team",
+      "verified": true,
+      "active": true,
+      "description": "Sui a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move",
+      "website": "https://sui.io",
+      "icon": "https://docs.sui.io/img/Logo-light.svg",
+      "version": "0.0.0",
+      "tags": ["Layer 1"],
+      "datastreams": [
+        {
+          "name": "nakji.sui.0_0_0.event_SwappedEvent",
+          "schema": {
+            "coin_x_in": "int",
+            "coin_x_out": "int",
+            "coin_y_in": "int",
+            "coin_y_out": "int",
+            "event_seq": "int",
+            "global": "string",
+            "lp_name": "string",
+            "ts": {
+              "seconds": "int",
+              "nanos": "int"
+            },
+            "tx_digest": "string"
+          },
+          "example_response": {
+            "coin_x_in": 5000000000,
+            "coin_x_out": 0,
+            "coin_y_in": 0,
+            "coin_y_out": 554618098,
+            "event_seq": 0,
+            "global": "MIPj11E2DJCEujP22eGtOPsqEc/8FR8u5KXAPaYfseI=",
+            "lp_name": "LP-0000000000000000000000000000000000000000000000000000000000000002::sui::SUI-247a6d271810efbe80943433e84b9360e2f976fce89e7c19dc680f5aae8738e2::flame::FLAME",
+            "ts": {
+              "seconds": 1683757261,
+              "nanos": 959000000
+            },
+            "tx_digest": "C33SwhUGD34lHc1Zh/Le+fU553STdqNiW1rIkUgH6eY="
+          }
+        }
+      ],
+      "versions": [
+        {
+          "number": "0.0.0",
+          "changelog": "Alpha testing"
+        }
+      ]
+    },
+    {
       "name": "sushiswap",
       "title": "Sushiswap",
       "author": "nakji_team",

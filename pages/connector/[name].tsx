@@ -222,6 +222,7 @@ export async function getStaticPaths() {
       { params: { name: "near" } },
       { params: { name: "klaytn" } },
       { params: { name: "klayswap" } },
+      { params: { name: "sui" } },
     ],
     fallback: false, // can also be true or 'blocking'
   };
